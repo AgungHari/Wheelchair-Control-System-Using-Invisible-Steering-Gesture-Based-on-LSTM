@@ -12,8 +12,7 @@ The trained model still does not deliver optimal performance, have not yet found
 
 The following is a light test using a small random amount of validation data.
 
-<img src="https://github.com/user-attachments/assets/8ae971ef-9ea3-45c2-a9c0-a0e207e61c11" width="150" height="280">
-
+<img src="https://github.com/user-attachments/assets/6d8fb2be-a022-4877-a8f9-08ae341728cf" width="344" height="344">
 
 ## Feedback
 Krisna :
