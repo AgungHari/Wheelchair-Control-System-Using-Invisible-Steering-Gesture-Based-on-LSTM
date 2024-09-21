@@ -16,16 +16,17 @@ class SocketCommunicator:
         self.port = port
         self.socket = None
         self.connect()
+        pass
 
     def connect(self):
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             s.connect((self.host, self.port))
             print("Terkoneksi dengan kursi roda")
             self.socket = s
         except socket.error:
             print("Mode Remote anjay")
-            
+
     def send(self, data):
         if self.socket:
             self.socket.send(data)
