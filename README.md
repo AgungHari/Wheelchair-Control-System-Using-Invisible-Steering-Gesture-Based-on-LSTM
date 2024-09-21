@@ -7,10 +7,12 @@ This project is still under development. It involves controlling the wheelchair 
 
 ## Progress of this Project
 The trained model still does not deliver optimal performance, have not yet found the best approach based on the collected data.
+
 ![lstm progress](https://github.com/user-attachments/assets/8ae971ef-9ea3-45c2-a9c0-a0e207e61c11)
 
 The following is a light test using a small random amount of validation data.
-![output](https://github.com/user-attachments/assets/6d8fb2be-a022-4877-a8f9-08ae341728cf)
+
+<img src="https://github.com/user-attachments/assets/8ae971ef-9ea3-45c2-a9c0-a0e207e61c11" width="150" height="280">
 
 
 ## Feedback
