@@ -5,7 +5,8 @@ Merupakan proyek original I Putu Krisna Erlangga, namun dimodifikasi untuk mengg
 
 EL VIDEO COMING SOON :
 
-Cara setup venv :
+Cara setup venv (baiknya pakai venv sebelum torch kalian hilang):
+
 ctrl + shift + p lalu pilih python environtment (kalau tidak ada install extension di vscode)
 lalu setelah selesai venvnya, buka new terminal. aktifkan venv dengan cara .venv/Scripts/activate (kalau tidak mau buka powershell lalu ubah policynya el chat aja)
 setelah venv aktif, install kebutuhan :
