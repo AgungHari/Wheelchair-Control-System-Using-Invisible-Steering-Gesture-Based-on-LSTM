@@ -4,6 +4,7 @@ import os
 import mediapipe as mp
 import time
 import math
+import socket
 from tensorflow.keras.models import load_model
 
 host = "192.168.4.1"
