@@ -10,6 +10,9 @@ from tensorflow.keras.models import load_model
 host = "192.168.4.1"
 port = 80
 
+#host= 255.255.248.0
+#port= 8080
+
 class SocketCommunicator:
     def __init__(self, host, port) -> None:
         self.host = host
@@ -106,6 +109,8 @@ while cap.isOpened():
     ret, frame = cap.read()
 
     new_frame_time = time.time()
+    cv.putText(image, 'Kursi roda aktif', (10,200), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv.LINE_AA)
+    
 
     image, results = media_pipe_detection(frame, holistic_model)
     draw_land_marks(image, results)
