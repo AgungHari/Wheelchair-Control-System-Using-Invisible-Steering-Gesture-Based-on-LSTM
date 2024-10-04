@@ -4,6 +4,13 @@
 
 This project is still under development. It involves controlling the wheelchair with an invisible steering wheel, using hand gestures as if steering. The approach utilizes an LSTM model to send output to the wheelchair, corresponding to the five available classes.
 
+## 🎬 Demo
+
+![mantap](https://github.com/user-attachments/assets/dad0701e-425c-4b3d-8604-a94cfa2fa1b4)
+
+<img alt="Static Badge" src="https://img.shields.io/badge/Youtube-red?style=flat-square&logo=youtube&link=https%3A%2F%2Fyoutu.be%2FO69vtuBGGe4%3Ffeature%3Dshared">
+
+
 ## 🔨 Installation
 
 PyPi version
