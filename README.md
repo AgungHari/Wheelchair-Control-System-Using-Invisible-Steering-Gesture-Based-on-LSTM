@@ -4,14 +4,59 @@
 
 This project is still under development. It involves controlling the wheelchair with an invisible steering wheel, using hand gestures as if steering. The approach utilizes an LSTM model to send output to the wheelchair, corresponding to the five available classes.
 
-## 🚶 Progress of this Project
-The trained model still does not deliver optimal performance, have not yet found the best approach based on the collected data.
+## 🔨 Installation
 
-![lstm progress](https://github.com/user-attachments/assets/8ae971ef-9ea3-45c2-a9c0-a0e207e61c11)
+PyPi version
 
-The following is a light test using a small random amount of validation data.
+![Scikit-learn version](https://img.shields.io/badge/scikitlearn-v1.5.1-black)
+![Keras version](https://img.shields.io/badge/Keras-v3.5.0-purple)
+![matplotlib version](https://img.shields.io/badge/matplotlib-v3.9.2-red)
+![MediaPipe version](https://img.shields.io/badge/MediaPipe-v0.10.14-blue)
+![Tensorflow version](https://img.shields.io/badge/Tensorflow-v2.10.1-orange)
+![OpenCV version](https://img.shields.io/badge/OpenCV-v4.9.0.80-green)
+![IPyKernel version](https://img.shields.io/badge/IPyKernel-v6.29.4-yellow)
 
-<img src="https://github.com/user-attachments/assets/6d8fb2be-a022-4877-a8f9-08ae341728cf" width="344" height="344">
+Please use seperate file for collecting dataset and training also use seperate folder for control. venv setup for training
+
+```bash
+  python --version
+  python -m venv nama_venv
+  nama_venv\Scripts\activate
+  pip install opencv-python
+  pip install mediapipe
+  pip install numpy
+  pip install matplotlib
+  pip install tensorflow
+  pip install seaborn
+  pip install scikit-learn
+```
+
+Actually, you need an ESP32 and the wheelchair to run it.
+
+```bash
+  python --version
+  python -m venv nama_venv
+  nama_venv\Scripts\activate
+  pip install mediapipe
+  pip install opencv-python
+```
+
+## Collecting Dataset
+
+change the dataset folder name and class for your setup. 
+
+```bash
+  DATA_PATH = os.path.join('p_ganti_ini_pake_namaDataset') #Change it with whatever you like
+
+  actions = np.array(["Follow", "Github", "Agung", "Hari", "Bos"])
+  no_sequences = 50 #set jumlah sequence
+  sequence_length = 6 #Lama ngambil per sequence
+```
+run all cell on AMBIL_DATASET_AGUNG. it should open camera feed like this.
+
+![ambildataset](https://github.com/user-attachments/assets/08da6c91-c6a7-4ab6-8016-f970053b7a83)
+
+after you normalized the dataset you can start training the model
 
 ## 💬 Feedback
 
